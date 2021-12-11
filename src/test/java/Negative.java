@@ -10,6 +10,7 @@ public class Negative {
     protected String login="fominaelena";
     protected String emptyPass="";
     protected String downCasePass="1p73bp4z";
+
     //Авторизация без ввода логина и пароля
     @Test
     void empty(){
