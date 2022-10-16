@@ -1,8 +1,10 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.WebDriverConditions.*;
 import org.junit.jupiter.api.Order;
 
@@ -23,8 +25,8 @@ public class rsearch {
     void search(){
         open("https://r0.ru");
         $(byName("query")).val("rambler").pressEnter();
+        $("#client").shouldHave(partialText("Медийно-сервисный интернет-портал, включающий в себя новостной агрегатор"));
         Selenide.back();
-        sleep(500);
     }
     @Test
     void mail(){
