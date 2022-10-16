@@ -1,5 +1,5 @@
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
@@ -9,7 +9,7 @@ public class Positive {
     private String login="fominaelena";
     private String pass="1P73BP4Z";
     private String email="efomina@company.ru";
-//Успешная авторизация
+
     @Test
     void login(){
         open("https://lmslite47vr.demo.mirapolis.ru/mira");
