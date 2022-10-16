@@ -1,10 +1,7 @@
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.Condition.*;
 import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.WebDriverConditions.*;
 import org.junit.jupiter.api.Order;
